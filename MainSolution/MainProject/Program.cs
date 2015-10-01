@@ -10,6 +10,8 @@ namespace MainProject
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("HEJSAN LULLE!");
+            Console.Read();
         }
     }
 }
