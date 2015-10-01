@@ -203,6 +203,84 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="1d0fb5b8-7661-49d5-814b-bb48951b1276"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Add 2D physics"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3daf62f3-9ccf-4e56-93de-5e64224e4528"
+              LastKnownName="Add 2D physics"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="87693edf-630d-48c9-8f3a-e1b0216f3e7b"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7d792eda-9d5f-46db-8c72-5fb1cf25ffbe"
+                  name="Add 2D physics"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="3589344f-d767-47b7-9f3c-d0c4db9290f4"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Add 3D physics"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="21aa0c67-26bf-40d9-9bf5-2d7db155e46f"
+              LastKnownName="Add 3D physics"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="35393649-df58-4249-8fa0-c485c1b88cb5"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c2befa8b-28c2-47f2-9915-e2d5216a3a2c"
+                  name="Add 3D physics"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -557,6 +635,13 @@
       <useCase
         Id="3d26f1b0-d4d2-4044-a318-e43f8a797844"
         name="Give input with a mouse"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="423fa3f5-8450-47e7-9a26-a6f6907951ea"
+        name="Actor2"
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
@@ -1105,6 +1190,256 @@
         name="Add visual effects to the scene or an object."
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="938a544d-d8b5-4d36-bd42-b09837e2e4f5"
+        name="Realtime physics simulation"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="13defe8a-d369-4c7c-ad0c-2ed100abee73"
+        name="Fluid simulation"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2c22f228-9c0d-46f4-9e14-409c8903c7c6"
+        name="Collision detection with different shapes"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3daf62f3-9ccf-4e56-93de-5e64224e4528"
+        name="Add 2D physics"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="4c89d276-6ce0-4a0d-8af2-5b31cd4c227b"
+            isDerived="false"
+            sourceEndRoleName="Add 2D physics"
+            targetEndRoleName="Collision detection with different shapes"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2c22f228-9c0d-46f4-9e14-409c8903c7c6"
+              LastKnownName="Collision detection with different shapes"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8ad1f531-46d7-4555-8b5e-d6942309e696"
+                  name="Add 2D physics"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2047a7ac-f0bd-46fd-895b-77085f1f65d3"
+                  name="Collision detection with different shapes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0fa68cf3-8860-4867-afd9-1a677ffc6679"
+            isDerived="false"
+            sourceEndRoleName="Add 2D physics"
+            targetEndRoleName="Realtime physics simulation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="938a544d-d8b5-4d36-bd42-b09837e2e4f5"
+              LastKnownName="Realtime physics simulation"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="952f01cb-a1a2-4598-a871-a9928ce1e780"
+                  name="Add 2D physics"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="52d5730a-9298-4f71-a1c1-b7243e10a06b"
+                  name="Realtime physics simulation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ceff3333-e3e6-44a2-92ad-aba81c03360b"
+        name="UseCase5"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="516d0769-9d41-44b8-843f-f4f522511c94"
+        name="UseCase6"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="21aa0c67-26bf-40d9-9bf5-2d7db155e46f"
+        name="Add 3D physics"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="7c696793-1425-4c57-9f8b-ec4dbb535098"
+            isDerived="false"
+            sourceEndRoleName="Add 3D physics"
+            targetEndRoleName="Fluid simulation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="13defe8a-d369-4c7c-ad0c-2ed100abee73"
+              LastKnownName="Fluid simulation"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b282f439-0995-4288-9a14-b97ee387281c"
+                  name="Add 3D physics"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="04e03e19-d331-4d36-af49-2dca05d1738e"
+                  name="Fluid simulation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="7d0c4a14-1795-49a3-bef8-82df236bd242"
+            isDerived="false"
+            sourceEndRoleName="Add 3D physics"
+            targetEndRoleName="Realtime physics simulation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="938a544d-d8b5-4d36-bd42-b09837e2e4f5"
+              LastKnownName="Realtime physics simulation"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cb7f486c-9682-45b2-bfb5-bed1a3bd25dc"
+                  name="Add 3D physics"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="04acc41d-7c70-4223-9be7-b7d77e1f8cd9"
+                  name="Realtime physics simulation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1e20a129-cc84-4d38-8e55-450e0ea4007e"
+            isDerived="false"
+            sourceEndRoleName="Add 3D physics"
+            targetEndRoleName="Collision detection with different shapes"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="2c22f228-9c0d-46f4-9e14-409c8903c7c6"
+              LastKnownName="Collision detection with different shapes"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="909e640c-bcf7-43a7-af91-c6566a74462f"
+                  name="Add 3D physics"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="641230c2-13ea-4107-b805-861bd28efde1"
+                  name="Collision detection with different shapes"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <artifact
