@@ -1,4 +1,5 @@
-﻿using System;
+﻿using OpenTK;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,9 +11,11 @@ namespace MainProject
     {
         static void Main(string[] args)
         {
-            Test test = new Test();
-            test.Run();
-            Console.Read();
+            GameWindow window = new GameWindow(800, 600);
+
+            Game game = new Game(window);
+
+            window.Run(1.0 / 60.0);
         }
     }
 }
