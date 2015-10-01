@@ -1,0 +1,127 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8137f8a8-af9d-469c-8504-89f5ca238ea1" name="AudioUseCase" linkedPackageId="1b06f8a5-f20d-4e60-8e40-3d14eae867b5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <useCase Id="0afc3e3d-646e-4bec-afb1-cfc5661ad0ef" name="UseCase2" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ced1fa4c-580c-47be-acf7-51e94b5bcf98" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="632b910c-5f9d-4eb4-9f9c-82ed5bde3bd8" name="Import Sounds" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b61b2567-a73a-4c77-a32b-08bd5bd8faee" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="43486d3b-928e-45d1-9c59-db24854e286c" name="Handle Event" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="775e4fa6-2b2e-4489-82a9-bc2d917fafef" />
+        <suppliersInternal>
+          <dependency Id="4b125b16-054b-451d-bc76-8027db6e590a">
+            <useCaseMoniker Id="07356362-df6c-4a28-9f02-c29aa2d25439" LastKnownName="Play Sound" />
+            <elementDefinition Id="8210f9fa-023f-4eb6-bdf3-20989d5fd297" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="07356362-df6c-4a28-9f02-c29aa2d25439" name="Play Sound" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="b6709c50-ca00-4044-9b21-19affbaf5dde" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="253a1aa0-d9c0-4371-8c1c-39ab6657a2c0" name="Manage 3D Sounds" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="4480889b-b609-4967-98ba-39bb29a2b90a" />
+        <suppliersInternal>
+          <dependency Id="385f8419-3b9b-437d-9063-9b0d79696dcb">
+            <useCaseMoniker Id="07356362-df6c-4a28-9f02-c29aa2d25439" LastKnownName="Play Sound" />
+            <elementDefinition Id="1f9efaa1-873e-43e3-96bb-4515b315788b" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="a39e3bb8-6e71-4d34-95a1-c03addf6149b" name="Handle GameObjects" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="c8a91893-5fed-4939-9a5a-c7f9f5854939" />
+        <targetEnds>
+          <association Id="3f297fc8-fb29-4cb8-a0e7-fb19dc5cb740" isDerived="false" sourceEndRoleName="UseCase8" targetEndRoleName="UseCase6" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="253a1aa0-d9c0-4371-8c1c-39ab6657a2c0" LastKnownName="Manage 3D Sounds" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e1429edf-1512-4648-a086-0171eaf03f5e" name="UseCase8" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="9f4d2ce9-c8cf-4bea-9743-5a7a45c38692" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5b1b852d-2be2-445d-8188-2f292bee7887" name="UseCase6" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="77ae5bc2-05a4-490f-a59d-2eb6937c8673" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="df382b96-5f33-4aba-9e11-2f2f0f9afe8f" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <artifact Id="fd9e90c2-3cb4-47f1-90ef-bb240a7556db" name="System" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="48f8e36d-0fcb-470f-a314-765058a95963" />
+        <suppliersInternal>
+          <dependency Id="8ec99f0b-69d1-4bcf-b714-ea6ade5ecec5">
+            <useCaseMoniker Id="632b910c-5f9d-4eb4-9f9c-82ed5bde3bd8" LastKnownName="Import Sounds" />
+            <elementDefinition Id="3ff87b44-ab8f-45bc-ab96-c107d39f0f48" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association Id="bf668307-d523-4a89-ae57-2c44798a59d0" isDerived="false" sourceEndRoleName="Artifact2" targetEndRoleName="UseCase4" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="43486d3b-928e-45d1-9c59-db24854e286c" LastKnownName="Handle Event" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="86ab31f3-cd5d-4730-a530-28ba1685191d" name="Artifact2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="64f20c38-8ca4-4cb3-a5fa-1b5ab28f959a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="85782868-9347-46e5-b2df-93848ae779d2" name="UseCase4" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="78c859d3-ca24-4777-ab82-f70c94c01d6e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="cc1dd225-3ebb-411f-85ec-a94bc424365e" />
+          </association>
+          <association Id="d7a5bf87-64bb-4624-b376-9771b4361458" isDerived="false" sourceEndRoleName="Artifact2" targetEndRoleName="UseCase8" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="a39e3bb8-6e71-4d34-95a1-c03addf6149b" LastKnownName="Handle GameObjects" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6d5d24cd-7ddd-49af-92ef-15043eb796ef" name="Artifact2" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="097ad3d6-5701-4240-bbfb-d2fe1f7ea9a5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="287fb452-e251-4b40-bf7e-7c5532fde939" name="UseCase8" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="cfc693d3-8137-497b-9495-bb0328709637" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b378bdc9-4a54-46d8-bf36-6df3f364fc50" />
+          </association>
+        </targetEnds>
+      </artifact>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="1b06f8a5-f20d-4e60-8e40-3d14eae867b5" name="TankeSmedjan">
+    <elementDefinition Id="8042d742-8a48-45b0-a74e-9d4d8fbef984" />
+    <profileInstances>
+      <packageHasProfileInstances Id="caf7173b-719d-4603-9915-97de773354fb">
+        <profileInstance Id="e1f02ac7-d2ea-4249-894c-8667ad59f0fb" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="3d6167ef-c6fa-470f-8a71-3721f34fdc59">
+        <profileInstance Id="1aa38800-ed57-41fb-9fdd-a0a58ca4d4fc" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
+  </package>
+</useCaseModelRoot>

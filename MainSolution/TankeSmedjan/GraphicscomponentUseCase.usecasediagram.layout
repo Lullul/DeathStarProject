@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="GraphicscomponentUseCase">
+  <useCaseModelRootMoniker Id="552de5fa-e5de-419e-b47d-d7b225c3953a" />
+  <nestedChildShapes>
+    <actorShape Id="59e61992-205b-46b9-9118-fffae3396674" absoluteBounds="1.5, 2.625, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="0f8002ae-6582-4eed-bb6e-ec79388a4f64" LastKnownName="User" />
+      <relativeChildShapes />
+    </actorShape>
+    <useCaseShape Id="b63ba8d6-40b7-4af6-9efb-ef11e4704ce1" absoluteBounds="2.25, 1, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="eff6afd0-5459-42da-931e-049006a6a64d" LastKnownName="Add primitive shapes to a scene" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.91666666666667 : 2.625); (2.52639320225002 : 1.71041019662497)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="cc7d10db-d91c-43f0-9bf4-7dcfa89c7c41" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="59e61992-205b-46b9-9118-fffae3396674" />
+        <useCaseShapeMoniker Id="b63ba8d6-40b7-4af6-9efb-ef11e4704ce1" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="37bfb776-8900-42b6-8707-af52ff98e46c" absoluteBounds="3.5, 1.5, 1, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="7dff5aa1-7fce-4e98-b19c-ac551fc5dd54" LastKnownName="Add shaders to objects in a scene." />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 2.76388888888889); (3.56985423318291 : 2.06617589636315)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="8182e3cd-b149-4439-9519-94db40186d01" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="59e61992-205b-46b9-9118-fffae3396674" />
+        <useCaseShapeMoniker Id="37bfb776-8900-42b6-8707-af52ff98e46c" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="07b66f87-2aa6-4e46-8bb5-ad27be4428f4" absoluteBounds="3.75, 2.5, 1.375, 1" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="841c6cbe-7ead-4359-ad08-c71f1568658a" LastKnownName="Transform (rotation, position and scale) objects in a scene." />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 2.88662790697674); (3.75140165606336 : 2.96808844911923)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="27c7d522-aaad-4ea0-8edc-0e63197231f5" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="59e61992-205b-46b9-9118-fffae3396674" />
+        <useCaseShapeMoniker Id="07b66f87-2aa6-4e46-8bb5-ad27be4428f4" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="10c9659e-84bd-4c73-a78f-95552e9b902b" absoluteBounds="3.25, 3.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="96db25bb-4907-46b7-bfc3-fd43470064bf" LastKnownName="Add textures to objects." />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(2 : 3.03125); (3.43765247622279 : 3.92978279763924)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="b261145c-a002-4a79-8d83-c5b448089330" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="59e61992-205b-46b9-9118-fffae3396674" />
+        <useCaseShapeMoniker Id="10c9659e-84bd-4c73-a78f-95552e9b902b" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseShape Id="bcd39849-3f8e-4573-9269-6a113c577029" absoluteBounds="2, 4.25, 1, 0.875" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="cf1b46ca-7370-43a5-ada6-b2f5e0ba7959" LastKnownName="Add visual effects to the scene or an object." />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(1.85344827586207 : 3.125); (2.32977945819757 : 4.27613369064414)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="a621d912-076b-418e-966f-61d416804694" />
+      <relativeChildShapes />
+      <nodes>
+        <actorShapeMoniker Id="59e61992-205b-46b9-9118-fffae3396674" />
+        <useCaseShapeMoniker Id="bcd39849-3f8e-4573-9269-6a113c577029" />
+      </nodes>
+    </useCaseAssociationConnector>
+  </nestedChildShapes>
+</useCaseDiagram>

@@ -1,0 +1,134 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="552de5fa-e5de-419e-b47d-d7b225c3953a" name="GraphicscomponentUseCase" linkedPackageId="c407f533-8657-4b8d-ac68-ef9a40287db3" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="7d2994e9-e630-4623-b4ab-d8c623132a57">
+      <profileInstance Id="9c5a9e27-9926-47c0-a399-79d9da4fc1a4" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="96dcddff-8f84-45e2-aa88-eb23099c977d">
+      <profileInstance Id="28d352fa-f845-4b8f-938f-e1d41347a635" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="0f8002ae-6582-4eed-bb6e-ec79388a4f64" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="16228e4c-8aa4-4908-ac85-de1a858cd887" />
+        <targetEnds>
+          <association Id="cc7d10db-d91c-43f0-9bf4-7dcfa89c7c41" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Add primitive shapes to a scene" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="eff6afd0-5459-42da-931e-049006a6a64d" LastKnownName="Add primitive shapes to a scene" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="c40d22c9-81ec-4d5c-aa8f-6ab0f56c5275" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="456d1085-a5fa-4e88-a0c5-41174e998c2d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1f29d307-5a2a-4cae-841f-36b052ef4906" name="Add primitive shapes to a scene" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c1ad51e1-db17-44e3-a866-4428b914373b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="d51b90c0-847a-4f55-a75b-a32273708550" />
+          </association>
+          <association Id="8182e3cd-b149-4439-9519-94db40186d01" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Add shaders to objects in a scene." isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="7dff5aa1-7fce-4e98-b19c-ac551fc5dd54" LastKnownName="Add shaders to objects in a scene." />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a66b31de-ed3b-495d-ab67-7c37bd2e5219" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="50eb140b-4570-4bbc-b24f-764ac05f66df" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="306116ef-28f4-474f-9b34-42254c42bf11" name="Add shaders to objects in a scene." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="63996698-e33b-47df-9ffa-e35ed9ac6be0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="93be8926-300c-403a-a679-9ce89b196284" />
+          </association>
+          <association Id="b261145c-a002-4a79-8d83-c5b448089330" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Add textures to objects." isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="96db25bb-4907-46b7-bfc3-fd43470064bf" LastKnownName="Add textures to objects." />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="401a7387-8fc8-4b82-9975-b491e6a88753" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="5dee68bb-1069-4f16-8b7e-192d0d2c514b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4317d673-d1c1-4590-bd51-1df788cedd18" name="Add textures to objects." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="aeeb747d-5381-40e2-969a-3a1fe8702259" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0ff553bf-a57b-46c3-8ce1-61174752ba7b" />
+          </association>
+          <association Id="a621d912-076b-418e-966f-61d416804694" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Add visual effects to the scene or an object." isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="cf1b46ca-7370-43a5-ada6-b2f5e0ba7959" LastKnownName="Add visual effects to the scene or an object." />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="66e9d72c-eefe-42b9-96a6-c09d716fcf35" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cb5e2e3c-8e30-485f-9ab5-439795506490" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="b5962a80-302a-4754-9df1-0c75ad5eb7d3" name="Add visual effects to the scene or an object." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8f352d95-d5f8-4676-a10f-9b082ef9012e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="ec95a9c9-d858-4951-9b35-6d411529dcc9" />
+          </association>
+          <association Id="27c7d522-aaad-4ea0-8edc-0e63197231f5" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Transform (rotation, position and scale) objects in a scene." isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="841c6cbe-7ead-4359-ad08-c71f1568658a" LastKnownName="Transform (rotation, position and scale) objects in a scene." />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="be7427e4-ac1c-4865-945b-69024f193306" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="315f6a19-a2bf-4bac-9c0d-37ba9cb40176" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="eef3dcf3-f564-4619-bcdc-a7fce75e920e" name="Transform (rotation, position and scale) objects in a scene." isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="3d38c57e-0bd8-4113-bcd5-df2f26907ca9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="275e64c0-52d1-421e-a281-010c1c7c29ac" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="eff6afd0-5459-42da-931e-049006a6a64d" name="Add primitive shapes to a scene" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="521a4edf-8474-4074-84c0-11eed2aaf8a5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="7dff5aa1-7fce-4e98-b19c-ac551fc5dd54" name="Add shaders to objects in a scene." isAbstract="false" isLeaf="false">
+        <elementDefinition Id="849ee94f-4066-4cd5-9ae5-72455fadbb37" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="841c6cbe-7ead-4359-ad08-c71f1568658a" name="Transform (rotation, position and scale) objects in a scene." isAbstract="false" isLeaf="false">
+        <elementDefinition Id="1a122639-c37d-410f-8c9c-3f4103682f11" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="96db25bb-4907-46b7-bfc3-fd43470064bf" name="Add textures to objects." isAbstract="false" isLeaf="false">
+        <elementDefinition Id="88331a1d-73ca-492a-8b15-12113f11c23a" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="cf1b46ca-7370-43a5-ada6-b2f5e0ba7959" name="Add visual effects to the scene or an object." isAbstract="false" isLeaf="false">
+        <elementDefinition Id="fb095e26-d031-46b6-855e-1e8e528bea19" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="c407f533-8657-4b8d-ac68-ef9a40287db3" name="TankeSmedjan">
+    <elementDefinition Id="8042d742-8a48-45b0-a74e-9d4d8fbef984" />
+  </package>
+</useCaseModelRoot>

@@ -646,6 +646,552 @@
         isLeaf="false" />
     </packageHasNamedElement>
     <packageHasNamedElement>
+      <actor
+        Id="f2ceab5e-5a4c-4f0e-b928-5e1856d6cd7a"
+        name="User"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="169faeef-77a6-4f6e-a9da-d89854aa241b"
+        name="System"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <suppliersInternal>
+          <dependency
+            Id="9fafca0d-dadc-4498-9240-699622c76248">
+            <useCaseMoniker
+              Id="9ac7d149-9c12-418c-9215-9164dac4f327"
+              LastKnownName="Import Sounds"
+              LastKnownLocation="TankeSmedjan.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="1dee5cad-5c67-4252-8627-ccfd765acb0f"
+            isDerived="false"
+            sourceEndRoleName="System"
+            targetEndRoleName="Event"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4d122c81-de0c-4fd3-9541-f8906ca3cf1c"
+              LastKnownName="Event"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="deddff7c-81d9-4f3f-9288-f9117e119412"
+                  name="System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="bc75f801-0d6c-4ec9-b53b-9321f3cf2e1b"
+                  name="Event"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="6459e1a5-e280-4a3c-8cd8-6f96d5ef9ccc"
+            isDerived="false"
+            sourceEndRoleName="System"
+            targetEndRoleName="Handle GameObjects"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a0ba68dd-b6dd-4b7f-b85e-2e48d39dfd38"
+              LastKnownName="Handle GameObjects"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a307be00-7ee1-485e-8eb1-5df5c305e2b2"
+                  name="System"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cde17c68-7990-491f-ad6f-df023e79bf6d"
+                  name="Handle GameObjects"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4df851e1-34ea-425e-b14f-628a395f9ffa"
+        name="UseCase1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="576d4943-d762-416d-b207-c8ded63192fc"
+        name="Put 3D sounds"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="a13f3a39-07c3-471d-a7b1-c3be608f2dfd">
+            <useCaseMoniker
+              Id="d920b320-78fc-47a0-af4e-3646683043bd"
+              LastKnownName="Play Sound"
+              LastKnownLocation="TankeSmedjan.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a0ba68dd-b6dd-4b7f-b85e-2e48d39dfd38"
+        name="Handle GameObjects"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a20ee9ed-ea99-487d-be98-3e3e541c32fb"
+            isDerived="false"
+            sourceEndRoleName="Handle GameObjects"
+            targetEndRoleName="Put 3D sounds"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="576d4943-d762-416d-b207-c8ded63192fc"
+              LastKnownName="Put 3D sounds"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4f3dd3df-f7f9-4fd3-bed2-cb4a9d86106f"
+                  name="Handle GameObjects"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7900bcef-9c72-4a94-b2de-b28620fd1bce"
+                  name="Put 3D sounds"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4d122c81-de0c-4fd3-9541-f8906ca3cf1c"
+        name="Event"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="183ac89a-a7f1-4869-b93c-4a8349a8d2ee">
+            <useCaseMoniker
+              Id="d920b320-78fc-47a0-af4e-3646683043bd"
+              LastKnownName="Play Sound"
+              LastKnownLocation="TankeSmedjan.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="8c5da9b5-e97d-43b1-804d-c9b5ddc9b1b6"
+            isDerived="false"
+            sourceEndRoleName="Event"
+            targetEndRoleName="Sounds"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="ba27942c-6006-4d24-a2d2-2103f422596e"
+              LastKnownName="Sounds"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3a2a3ffe-46b2-4efc-9661-a87d7c10acdc"
+                  name="Event"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="229c7832-5e48-4767-98c7-d27532b10a72"
+                  name="Sounds"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="d920b320-78fc-47a0-af4e-3646683043bd"
+        name="Play Sound"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="ba27942c-6006-4d24-a2d2-2103f422596e"
+        name="Sounds"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="a5231630-55db-4e7b-8d3d-7886633a7f67"
+            isDerived="false"
+            sourceEndRoleName="Sounds"
+            targetEndRoleName="Play Sound"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="d920b320-78fc-47a0-af4e-3646683043bd"
+              LastKnownName="Play Sound"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="058ec5db-8455-448e-aaa3-44dda3631501"
+                  name="Sounds"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4f10e1c2-d979-496a-b3c1-21659aff8041"
+                  name="Play Sound"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9768eb01-972f-48ec-aa90-140770cd8c2f"
+        name="UseCase7"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9ac7d149-9c12-418c-9215-9164dac4f327"
+        name="Import Sounds"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="16228e4c-8aa4-4908-ac85-de1a858cd887"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d51b90c0-847a-4f55-a75b-a32273708550"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Add primitive shapes to a scene"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="521a4edf-8474-4074-84c0-11eed2aaf8a5"
+              LastKnownName="Add primitive shapes to a scene"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="456d1085-a5fa-4e88-a0c5-41174e998c2d"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c1ad51e1-db17-44e3-a866-4428b914373b"
+                  name="Add primitive shapes to a scene"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="93be8926-300c-403a-a679-9ce89b196284"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Add shaders to objects in a scene."
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="849ee94f-4066-4cd5-9ae5-72455fadbb37"
+              LastKnownName="Add shaders to objects in a scene."
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="50eb140b-4570-4bbc-b24f-764ac05f66df"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="63996698-e33b-47df-9ffa-e35ed9ac6be0"
+                  name="Add shaders to objects in a scene."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0ff553bf-a57b-46c3-8ce1-61174752ba7b"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Add textures to objects."
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="88331a1d-73ca-492a-8b15-12113f11c23a"
+              LastKnownName="Add textures to objects."
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5dee68bb-1069-4f16-8b7e-192d0d2c514b"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aeeb747d-5381-40e2-969a-3a1fe8702259"
+                  name="Add textures to objects."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ec95a9c9-d858-4951-9b35-6d411529dcc9"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Add visual effects to the scene or an object."
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fb095e26-d031-46b6-855e-1e8e528bea19"
+              LastKnownName="Add visual effects to the scene or an object."
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cb5e2e3c-8e30-485f-9ab5-439795506490"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8f352d95-d5f8-4676-a10f-9b082ef9012e"
+                  name="Add visual effects to the scene or an object."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="275e64c0-52d1-421e-a281-010c1c7c29ac"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Transform (rotation, position and scale) objects in a scene."
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1a122639-c37d-410f-8c9c-3f4103682f11"
+              LastKnownName="Transform (rotation, position and scale) objects in a scene."
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="315f6a19-a2bf-4bac-9c0d-37ba9cb40176"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d38c57e-0bd8-4113-bcd5-df2f26907ca9"
+                  name="Transform (rotation, position and scale) objects in a scene."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="521a4edf-8474-4074-84c0-11eed2aaf8a5"
+        name="Add primitive shapes to a scene"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="849ee94f-4066-4cd5-9ae5-72455fadbb37"
+        name="Add shaders to objects in a scene."
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1a122639-c37d-410f-8c9c-3f4103682f11"
+        name="Transform (rotation, position and scale) objects in a scene."
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="88331a1d-73ca-492a-8b15-12113f11c23a"
+        name="Add textures to objects."
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fb095e26-d031-46b6-855e-1e8e528bea19"
+        name="Add visual effects to the scene or an object."
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
       <useCase
         Id="938a544d-d8b5-4d36-bd42-b09837e2e4f5"
         name="Realtime physics simulation"
