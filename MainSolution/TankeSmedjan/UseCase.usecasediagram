@@ -5,57 +5,118 @@
       <actor Id="2e672e4c-14fa-4428-ab7e-1d6b50e2f86e" name="User" isAbstract="false" isLeaf="false">
         <elementDefinition Id="69f99be3-7a4c-4582-8598-f5fa098c6e3a" />
         <targetEnds>
-          <association Id="f247ef63-1344-4b91-bddc-add8f0f229c5" isDerived="false" sourceEndRoleName="User" targetEndRoleName="State Name" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="a39e027e-4e56-4494-b6a2-d3d5749b26b8" LastKnownName="State Name" />
+          <association Id="0816517f-a1a6-4844-a606-d0de40ac35fb" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Mountaintree Engine" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="fce113d8-7580-473a-bd5e-f97500ae0cc9" LastKnownName="Mountaintree Engine" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="809cf2ee-1440-48da-99a5-aa08ea5e5422" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="502b1ca4-c015-4ced-a78a-bc96e264af25" />
+                <memberEnd Id="e4436d9d-61e7-4304-973d-0c8236c3a395" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="f3ba4110-8413-4e6f-85a2-839033c26e2c" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="0953f867-179c-4b82-9360-30426a3f319f" name="State Name" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="35546a17-b0d0-4ebe-93f4-87d2d99597d7" />
+                <memberEnd Id="484b2483-ab18-4d51-bec2-9fda43c8b400" name="Mountaintree Engine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="da6ce821-2ec6-4ffb-9689-8d79557f703f" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="cb89e2fa-572d-45b7-a727-83795f216089" />
+            <elementDefinition Id="82aa34b8-ca9e-4946-b3a0-2f333469acf1" />
           </association>
         </targetEnds>
       </actor>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <artifact Id="ea96cf40-46f8-4bf2-bd0a-7699e1d1a24f" name="User must be able to state name and recieve a personal greeting." isAbstract="false" isLeaf="false">
-        <elementDefinition Id="8610a81b-3629-478a-8a5f-ca492fe6ffe5" />
-      </artifact>
-    </useCaseModelRootHasTypes>
-    <useCaseModelRootHasTypes>
-      <useCase Id="a39e027e-4e56-4494-b6a2-d3d5749b26b8" name="State Name" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="372ec4b7-f080-4c23-8e2e-048378306d4a" />
+      <subsystem Id="fce113d8-7580-473a-bd5e-f97500ae0cc9" name="Mountaintree Engine" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment Id="9bed188e-b724-4b20-bd0c-c5e4884b8e77">
+            <elementDefinition Id="64d5ed9e-309b-4cde-b468-949457756386" />
+            <body>A small game engine that supports 3D, Audio and Input handling.</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="184d9018-75d2-4682-8e98-7ed20ea9d53c" />
         <targetEnds>
-          <association Id="6024ea85-27e8-494d-b499-f5d21b57c4fe" isDerived="false" sourceEndRoleName="State Name" targetEndRoleName="Get Greeting" isLeaf="false" isAbstract="false">
-            <useCaseMoniker Id="ba33a69a-99cc-4599-8fe2-6e6793887a9c" LastKnownName="Get Greeting" />
+          <association Id="e520fe05-0bd9-4378-bc9f-15bbd2c397f4" isDerived="false" sourceEndRoleName="Mountaintree Engine" targetEndRoleName="Input component" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="21285e7e-e702-4e63-80f1-fc44609e4c88" LastKnownName="Input component" />
             <relationshipOwnedElementsInternal>
               <associationHasOwnedEnds>
-                <memberEnd Id="628071f4-9b0a-498c-b128-abfe61db91c1" name="State Name" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
-                  <elementDefinition Id="3218a293-8e7b-4e40-8c31-b62d71a38ffc" />
+                <memberEnd Id="5237fee0-75f7-47c8-89cc-83df5a723c31" name="Mountaintree Engine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="10911725-b7b8-4f74-8f51-e986b371d127" />
                 </memberEnd>
               </associationHasOwnedEnds>
               <associationHasOwnedEnds>
-                <memberEnd Id="1988a601-e574-47a9-9eed-5156bfe60c65" name="Get Greeting" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
-                  <elementDefinition Id="cc96e30f-5ed2-453a-8954-142e3211b675" />
+                <memberEnd Id="166214de-9184-4c3c-8051-263e2855550c" name="Input component" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="4b80faa4-2430-4a2e-b1ca-aed387fb4dd2" />
                 </memberEnd>
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
-            <elementDefinition Id="619e2d39-070e-4723-9295-f5545408c484" />
+            <elementDefinition Id="cc6393f7-efb4-44b0-bd2a-db5ec1ea2402" />
+          </association>
+          <association Id="30d8e3bf-b706-45ca-b2e4-0c1cec0d408f" isDerived="false" sourceEndRoleName="Mountaintree Engine" targetEndRoleName="Graphics component" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="c7f67c3e-4847-491b-838c-245961048ffb" LastKnownName="Graphics component" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="2eae16bc-59a8-4400-ab1e-6461fcd46306" name="Mountaintree Engine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="42ef2b61-4686-40c4-9df2-3edcc7816754" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f387a73a-33fd-4956-b496-450cc101a6e4" name="Graphics component" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="8325bc1d-6e8a-473e-bf05-40d19f4ac655" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="2e9c02d3-ac2f-4b3b-9442-dfcb00441b2e" />
+          </association>
+          <association Id="a8ca3f79-f1fb-4a46-a80b-c43cae63e998" isDerived="false" sourceEndRoleName="Mountaintree Engine" targetEndRoleName="Audio component" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="5d4d11ad-9b2a-4b4c-8feb-eec6c2b975b2" LastKnownName="Audio component" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac610240-23aa-4b99-81c5-91d6ce5f5f45" name="Mountaintree Engine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="c420cd55-42eb-46e4-8fec-3c615966407b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bb1f03af-3277-4a76-bd88-0d83e4acc743" name="Audio component" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="ac0ec47a-dcdd-4100-93e6-952e5f603533" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1632b2d4-ea71-4f05-951d-632a0fa52e4f" />
           </association>
         </targetEnds>
-      </useCase>
+      </subsystem>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
-      <useCase Id="ba33a69a-99cc-4599-8fe2-6e6793887a9c" name="Get Greeting" isAbstract="false" isLeaf="false">
-        <elementDefinition Id="2156d1e1-aa4d-433e-a338-935f249a2953" />
-      </useCase>
+      <subsystem Id="c7f67c3e-4847-491b-838c-245961048ffb" name="Graphics component" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment Id="39ed0ac8-af29-4867-89f2-7b28bc5588c5">
+            <elementDefinition Id="851128ef-cd1e-4ff2-a45c-cd641c655cb3" />
+            <body>The engine should be able to render various primitives with various shaders as well as apply various visual effects.</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="8e2b983f-36fd-4174-8385-bee1cc9e8d6e" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="5d4d11ad-9b2a-4b4c-8feb-eec6c2b975b2" name="Audio component" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment Id="57af8b3a-9b99-4998-b72a-dff307b3a85b">
+            <elementDefinition Id="ffe09a33-bb6d-46eb-b5dd-2c8fcc9e570f" />
+            <body>The engine should be able to import sounds and play them based on events.</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="2310ea71-8d90-43e6-a02c-7f39362c9222" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="21285e7e-e702-4e63-80f1-fc44609e4c88" name="Input component" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment Id="bd50b398-4858-4d6f-bdf8-69b22e244438">
+            <elementDefinition Id="9b998004-7c99-4b79-9c02-f562fe435c37" />
+            <body>The engine should be able to handle input via keyboard and mouse.</body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="f34e76b2-d936-4434-9a3f-30f5f14788fd" />
+      </subsystem>
     </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="d2e398e1-499f-4586-a43e-3b28d520d085" name="TankeSmedjan">

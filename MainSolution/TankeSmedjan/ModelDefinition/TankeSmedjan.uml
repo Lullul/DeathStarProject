@@ -3,6 +3,24 @@
   dslVersion="1.0.0.0"
   Id="8042d742-8a48-45b0-a74e-9d4d8fbef984"
   name="TankeSmedjan" xmlns="http://schemas.microsoft.com/dsltools/ModelStore">
+  <ownedCommentsInternal>
+    <comment
+      Id="64d5ed9e-309b-4cde-b468-949457756386">
+      <body>A small game engine that supports 3D, Audio and Input handling.</body>
+    </comment>
+    <comment
+      Id="851128ef-cd1e-4ff2-a45c-cd641c655cb3">
+      <body>The engine should be able to render various primitives with various shaders as well as apply various visual effects.</body>
+    </comment>
+    <comment
+      Id="ffe09a33-bb6d-46eb-b5dd-2c8fcc9e570f">
+      <body>The engine should be able to import sounds and play them based on events.</body>
+    </comment>
+    <comment
+      Id="9b998004-7c99-4b79-9c02-f562fe435c37">
+      <body>The engine should be able to handle input via keyboard and mouse.</body>
+    </comment>
+  </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
       Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b">
@@ -64,13 +82,51 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="82aa34b8-ca9e-4946-b3a0-2f333469acf1"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Mountaintree Engine"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="184d9018-75d2-4682-8e98-7ed20ea9d53c"
+              LastKnownName="Mountaintree Engine"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="f3ba4110-8413-4e6f-85a2-839033c26e2c"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="da6ce821-2ec6-4ffb-9689-8d79557f703f"
+                  name="Mountaintree Engine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <artifact
         Id="8610a81b-3629-478a-8a5f-ca492fe6ffe5"
-        name="User must be able to state name and recieve a personal greeting."
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
@@ -129,6 +185,158 @@
         name="Get Greeting"
         isAbstract="false"
         isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="184d9018-75d2-4682-8e98-7ed20ea9d53c"
+        name="Mountaintree Engine"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false">
+        <targetEnds>
+          <association
+            Id="cc6393f7-efb4-44b0-bd2a-db5ec1ea2402"
+            isDerived="false"
+            sourceEndRoleName="Mountaintree Engine"
+            targetEndRoleName="Input component"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="f34e76b2-d936-4434-9a3f-30f5f14788fd"
+              LastKnownName="Input component"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="10911725-b7b8-4f74-8f51-e986b371d127"
+                  name="Mountaintree Engine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4b80faa4-2430-4a2e-b1ca-aed387fb4dd2"
+                  name="Input component"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="2e9c02d3-ac2f-4b3b-9442-dfcb00441b2e"
+            isDerived="false"
+            sourceEndRoleName="Mountaintree Engine"
+            targetEndRoleName="Graphics component"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="8e2b983f-36fd-4174-8385-bee1cc9e8d6e"
+              LastKnownName="Graphics component"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="42ef2b61-4686-40c4-9df2-3edcc7816754"
+                  name="Mountaintree Engine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8325bc1d-6e8a-473e-bf05-40d19f4ac655"
+                  name="Graphics component"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="1632b2d4-ea71-4f05-951d-632a0fa52e4f"
+            isDerived="false"
+            sourceEndRoleName="Mountaintree Engine"
+            targetEndRoleName="Audio component"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="2310ea71-8d90-43e6-a02c-7f39362c9222"
+              LastKnownName="Audio component"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c420cd55-42eb-46e4-8fec-3c615966407b"
+                  name="Mountaintree Engine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ac0ec47a-dcdd-4100-93e6-952e5f603533"
+                  name="Audio component"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </subsystem>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="8e2b983f-36fd-4174-8385-bee1cc9e8d6e"
+        name="Graphics component"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="2310ea71-8d90-43e6-a02c-7f39362c9222"
+        name="Audio component"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="f34e76b2-d936-4434-9a3f-30f5f14788fd"
+        name="Input component"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
