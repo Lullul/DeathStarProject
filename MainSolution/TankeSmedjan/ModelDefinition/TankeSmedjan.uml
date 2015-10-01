@@ -866,6 +866,246 @@
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="16228e4c-8aa4-4908-ac85-de1a858cd887"
+        name="User"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="d51b90c0-847a-4f55-a75b-a32273708550"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Add primitive shapes to a scene"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="521a4edf-8474-4074-84c0-11eed2aaf8a5"
+              LastKnownName="Add primitive shapes to a scene"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="456d1085-a5fa-4e88-a0c5-41174e998c2d"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="c1ad51e1-db17-44e3-a866-4428b914373b"
+                  name="Add primitive shapes to a scene"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="93be8926-300c-403a-a679-9ce89b196284"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Add shaders to objects in a scene."
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="849ee94f-4066-4cd5-9ae5-72455fadbb37"
+              LastKnownName="Add shaders to objects in a scene."
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="50eb140b-4570-4bbc-b24f-764ac05f66df"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="63996698-e33b-47df-9ffa-e35ed9ac6be0"
+                  name="Add shaders to objects in a scene."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="0ff553bf-a57b-46c3-8ce1-61174752ba7b"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Add textures to objects."
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="88331a1d-73ca-492a-8b15-12113f11c23a"
+              LastKnownName="Add textures to objects."
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="5dee68bb-1069-4f16-8b7e-192d0d2c514b"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="aeeb747d-5381-40e2-969a-3a1fe8702259"
+                  name="Add textures to objects."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="ec95a9c9-d858-4951-9b35-6d411529dcc9"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Add visual effects to the scene or an object."
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="fb095e26-d031-46b6-855e-1e8e528bea19"
+              LastKnownName="Add visual effects to the scene or an object."
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="cb5e2e3c-8e30-485f-9ab5-439795506490"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="8f352d95-d5f8-4676-a10f-9b082ef9012e"
+                  name="Add visual effects to the scene or an object."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="275e64c0-52d1-421e-a281-010c1c7c29ac"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Transform (rotation, position and scale) objects in a scene."
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="1a122639-c37d-410f-8c9c-3f4103682f11"
+              LastKnownName="Transform (rotation, position and scale) objects in a scene."
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="315f6a19-a2bf-4bac-9c0d-37ba9cb40176"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="3d38c57e-0bd8-4113-bcd5-df2f26907ca9"
+                  name="Transform (rotation, position and scale) objects in a scene."
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="521a4edf-8474-4074-84c0-11eed2aaf8a5"
+        name="Add primitive shapes to a scene"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="849ee94f-4066-4cd5-9ae5-72455fadbb37"
+        name="Add shaders to objects in a scene."
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="1a122639-c37d-410f-8c9c-3f4103682f11"
+        name="Transform (rotation, position and scale) objects in a scene."
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="88331a1d-73ca-492a-8b15-12113f11c23a"
+        name="Add textures to objects."
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="fb095e26-d031-46b6-855e-1e8e528bea19"
+        name="Add visual effects to the scene or an object."
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"
