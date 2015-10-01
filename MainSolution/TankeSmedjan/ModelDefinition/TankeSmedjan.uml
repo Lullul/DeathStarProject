@@ -20,6 +20,10 @@
       Id="9b998004-7c99-4b79-9c02-f562fe435c37">
       <body>The engine should be able to handle input via keyboard and mouse.</body>
     </comment>
+    <comment
+      Id="ee723862-2e07-4a81-96d2-580fcf8ef898">
+      <body>The engine should be able to handle physics simulation with different shapes </body>
+    </comment>
   </ownedCommentsInternal>
   <profileInstances>
     <packageHasProfileInstances
@@ -311,6 +315,45 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="3f33e22a-36f2-4631-b0b5-c9aefadd357d"
+            isDerived="false"
+            sourceEndRoleName="Mountaintree Engine"
+            targetEndRoleName="Physics component"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="d64c8af0-3a88-4daf-b0a7-2f250a02ab6d"
+              LastKnownName="Physics component"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="da2720b8-53ed-4fb6-82f8-901da3b02833"
+                  name="Mountaintree Engine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6f68660a-3f82-4bfd-a747-0c7cf323d47c"
+                  name="Physics component"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </subsystem>
     </packageHasNamedElement>
@@ -334,6 +377,71 @@
       <subsystem
         Id="f34e76b2-d936-4434-9a3f-30f5f14788fd"
         name="Input component"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="ca06dba8-9d3b-40e0-a7e2-f813b70750ef"
+        name="Time"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="4c05e3bf-65d0-4bcc-9368-a168260e6210"
+            isDerived="false"
+            sourceEndRoleName="Time"
+            targetEndRoleName="Mountaintree Engine"
+            isLeaf="false"
+            isAbstract="false">
+            <subsystemMoniker
+              Id="184d9018-75d2-4682-8e98-7ed20ea9d53c"
+              LastKnownName="Mountaintree Engine"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ba5bb682-1bd0-4c28-8587-cc9089f0f558"
+                  name="Time"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="1fb8587c-aaaa-4d59-9d5b-be4bd8e22c44"
+                  name="Mountaintree Engine"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </actor>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="d64c8af0-3a88-4daf-b0a7-2f250a02ab6d"
+        name="Physics component"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="383eb953-6a40-43d1-a825-75a4e8a121f6"
+        name="Physics component1"
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />

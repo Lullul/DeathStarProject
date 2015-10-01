@@ -82,6 +82,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="1632b2d4-ea71-4f05-951d-632a0fa52e4f" />
           </association>
+          <association Id="5f080de0-4fe1-43d3-b8a3-ea2d65231dea" isDerived="false" sourceEndRoleName="Mountaintree Engine" targetEndRoleName="Physics component" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="c431091a-a88c-46f1-8f4c-e09841086fe3" LastKnownName="Physics component" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="754087d0-7f35-45fa-a71d-c30bbcd3709c" name="Mountaintree Engine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="da2720b8-53ed-4fb6-82f8-901da3b02833" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="15e45289-661b-493e-a28c-a4653ce58d47" name="Physics component" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="6f68660a-3f82-4bfd-a747-0c7cf323d47c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3f33e22a-36f2-4631-b0b5-c9aefadd357d" />
+          </association>
         </targetEnds>
       </subsystem>
     </useCaseModelRootHasTypes>
@@ -116,6 +132,40 @@
           </comment>
         </ownedCommentsInternal>
         <elementDefinition Id="f34e76b2-d936-4434-9a3f-30f5f14788fd" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="1b6e4e7f-2f71-48f6-867d-312115198e3d" name="Time" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="ca06dba8-9d3b-40e0-a7e2-f813b70750ef" />
+        <targetEnds>
+          <association Id="41a183e5-c8cc-450e-beab-795f426584e6" isDerived="false" sourceEndRoleName="Time" targetEndRoleName="Mountaintree Engine" isLeaf="false" isAbstract="false">
+            <subsystemMoniker Id="fce113d8-7580-473a-bd5e-f97500ae0cc9" LastKnownName="Mountaintree Engine" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="4bf6ca21-68c7-40d3-a5bb-95f1f60d1e97" name="Time" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="ba5bb682-1bd0-4c28-8587-cc9089f0f558" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="f970dccb-b4a6-4b84-9d91-acb16e0601f3" name="Mountaintree Engine" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="1fb8587c-aaaa-4d59-9d5b-be4bd8e22c44" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4c05e3bf-65d0-4bcc-9368-a168260e6210" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="c431091a-a88c-46f1-8f4c-e09841086fe3" name="Physics component" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <ownedCommentsInternal>
+          <comment Id="88964796-36e0-4b7e-b404-309954f889d9">
+            <elementDefinition Id="ee723862-2e07-4a81-96d2-580fcf8ef898" />
+            <body>The engine should be able to handle physics simulation with different shapes </body>
+          </comment>
+        </ownedCommentsInternal>
+        <elementDefinition Id="d64c8af0-3a88-4daf-b0a7-2f250a02ab6d" />
       </subsystem>
     </useCaseModelRootHasTypes>
   </packagedElements>
