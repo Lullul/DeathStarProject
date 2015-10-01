@@ -7,13 +7,13 @@
       <relativeChildShapes />
     </actorShape>
     <artifactShape Id="aab909ff-4564-42af-a3d0-e7c46ad840e7" absoluteBounds="3.875, 1.5, 1.5, 0.75" customColor="161, 199, 231">
-      <artifactMoniker Id="ea96cf40-46f8-4bf2-bd0a-7699e1d1a24f" LastKnownName="User must be able to state name" />
+      <artifactMoniker Id="ea96cf40-46f8-4bf2-bd0a-7699e1d1a24f" LastKnownName="User must be able to state name and recieve a personal greeting." />
     </artifactShape>
     <useCaseShape Id="fe48c6b5-7ded-43ab-af01-3f955c03fee4" absoluteBounds="4.625, 2.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
       <useCaseMoniker Id="a39e027e-4e56-4494-b6a2-d3d5749b26b8" LastKnownName="State Name" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(3.125 : 3.55555555555556); (4.68792136193923 : 3.12141073279466)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(3.125 : 3.55555555555556); (4.68792136193923 : 3.12141073279466)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="f247ef63-1344-4b91-bddc-add8f0f229c5" />
       <relativeChildShapes />
       <nodes>
@@ -25,7 +25,7 @@
       <useCaseMoniker Id="ba33a69a-99cc-4599-8fe2-6e6793887a9c" LastKnownName="Get Greeting" />
       <relativeChildShapes />
     </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(5.44509219983224 : 3.19205531989934); (6.05490780016776 : 3.55794468010066)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+    <useCaseAssociationConnector edgePoints="[(5.44509219983224 : 3.19205531989934); (6.05490780016776 : 3.55794468010066)]" fixedFrom="NotFixed" fixedTo="NotFixed" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
       <associationMoniker Id="6024ea85-27e8-494d-b499-f5d21b57c4fe" />
       <relativeChildShapes />
       <nodes>

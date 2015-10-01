@@ -70,7 +70,7 @@
     <packageHasNamedElement>
       <artifact
         Id="8610a81b-3629-478a-8a5f-ca492fe6ffe5"
-        name="User must be able to state name"
+        name="User must be able to state name and recieve a personal greeting."
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
