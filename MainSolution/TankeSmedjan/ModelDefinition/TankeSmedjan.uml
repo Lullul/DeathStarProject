@@ -125,6 +125,84 @@
               </associationHasOwnedEnds>
             </relationshipOwnedElementsInternal>
           </association>
+          <association
+            Id="8183e78b-7800-43d5-9cb0-4c1a21edb681"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Give input with a mouse"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="3d26f1b0-d4d2-4044-a318-e43f8a797844"
+              LastKnownName="Give input with a mouse"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="27172a7e-8b7a-46ae-935b-14517eb840b9"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="4fc7abbd-58c4-4354-bb7f-44a31c4d633f"
+                  name="Give input with a mouse"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="be43317c-c8b5-4db2-a68e-2e570489d791"
+            isDerived="false"
+            sourceEndRoleName="User"
+            targetEndRoleName="Give input with a Keyboard"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a94d381c-0d80-4f61-9d18-c217ee1fd817"
+              LastKnownName="Give input with a Keyboard"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b1f4442c-9aef-4cf0-9f93-78daadf69db9"
+                  name="User"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ca71032f-2210-45b6-ab91-c83ec3a7f51f"
+                  name="Give input with a Keyboard"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
         </targetEnds>
       </actor>
     </packageHasNamedElement>
@@ -445,6 +523,42 @@
         isAbstract="false"
         isLeaf="false"
         isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="9b64a665-a98d-4a83-8845-49f504c2db45"
+        name="Artifact1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <actor
+        Id="facf4a6b-a9eb-4425-8d7b-bf5682154dd3"
+        name="Actor1"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a94d381c-0d80-4f61-9d18-c217ee1fd817"
+        name="Give input with a Keyboard"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <subsystem
+        Id="5d7722e4-2233-4d52-80d2-a88b9db12e96"
+        name="Subsystem1"
+        isAbstract="false"
+        isLeaf="false"
+        isActiveClass="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="3d26f1b0-d4d2-4044-a318-e43f8a797844"
+        name="Give input with a mouse"
+        isAbstract="false"
+        isLeaf="false" />
     </packageHasNamedElement>
   </packagedElements>
   <primitiveType
