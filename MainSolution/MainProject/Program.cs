@@ -10,7 +10,8 @@ namespace MainProject
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("HEJSAN LULLE!");
+            Test test = new Test();
+            test.Run();
             Console.Read();
         }
     }
