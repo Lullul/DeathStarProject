@@ -11,7 +11,7 @@ namespace MainProject
     {
         static void Main(string[] args)
         {
-            GameWindow window = new GameWindow(800, 600);
+            GameWindow window = new GameWindow(800, 600, new OpenTK.Graphics.GraphicsMode(32, 8, 0, 8));
 
             Game game = new Game(window);
 
