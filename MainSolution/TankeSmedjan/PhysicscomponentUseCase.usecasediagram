@@ -1,1 +1,170 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="6d4d1d48-5044-4c97-9f94-93a5aba52012" name="PhysicscomponentUseCase" linkedPackageId="54db0de7-a941-4d02-8bc7-77fcceae50a7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="a1dc1fb9-ecbb-4883-973a-eaf63fe85ce4">
+      <profileInstance Id="7e052213-8e4b-4b96-b482-792a605fd7cd" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="d0bc5429-c6ad-4c49-a0b7-df13a4d85c2f">
+      <profileInstance Id="c8aa9417-087f-48eb-a090-738771d997aa" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="29745057-e881-46b8-9d2f-7c6d973c8c6b" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="69f99be3-7a4c-4582-8598-f5fa098c6e3a" />
+        <targetEnds>
+          <association Id="bb87ba53-030d-4718-b513-acd07f6fcaaa" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Add 2D physics" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="8a968707-373e-4075-8bc8-4401b9016262" LastKnownName="Add 2D physics" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="a5adc203-f640-479b-89e8-22f2f1b5424c" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="87693edf-630d-48c9-8f3a-e1b0216f3e7b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="8b7e41d1-a90b-4d70-8f24-d4aa3d4ec13d" name="Add 2D physics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="7d792eda-9d5f-46db-8c72-5fb1cf25ffbe" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1d0fb5b8-7661-49d5-814b-bb48951b1276" />
+          </association>
+          <association Id="17b74c76-5948-412d-964c-7d9225d89f72" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Add 3D physics" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="137645a7-da8d-423b-9bef-7d2879e76712" LastKnownName="Add 3D physics" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="6087043a-3898-40e5-bb52-db1961027b9a" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="35393649-df58-4249-8fa0-c485c1b88cb5" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="1015a5df-64dc-4991-9d24-f9060d5db654" name="Add 3D physics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="c2befa8b-28c2-47f2-9915-e2d5216a3a2c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="3589344f-d767-47b7-9f3c-d0c4db9290f4" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fef78cd5-a711-46e0-920a-32ed12334fbc" name="Realtime physics simulation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="938a544d-d8b5-4d36-bd42-b09837e2e4f5" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="fea860a6-fe34-4272-8c48-11787e87ad55" name="Fluid simulation" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="13defe8a-d369-4c7c-ad0c-2ed100abee73" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="9eead5d9-6327-4aea-917b-b5edafb17668" name="Collision detection with different shapes" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="2c22f228-9c0d-46f4-9e14-409c8903c7c6" />
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="8a968707-373e-4075-8bc8-4401b9016262" name="Add 2D physics" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3daf62f3-9ccf-4e56-93de-5e64224e4528" />
+        <targetEnds>
+          <association Id="1f2e366e-158a-46da-b2e5-26a66a0c861b" isDerived="false" sourceEndRoleName="Add 2D physics" targetEndRoleName="Collision detection with different shapes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9eead5d9-6327-4aea-917b-b5edafb17668" LastKnownName="Collision detection with different shapes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e94457cb-984a-4025-8c8f-ff521a220b9a" name="Add 2D physics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="8ad1f531-46d7-4555-8b5e-d6942309e696" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="87cba1e4-4aef-4ca3-9f21-94c078e838a9" name="Collision detection with different shapes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2047a7ac-f0bd-46fd-895b-77085f1f65d3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="4c89d276-6ce0-4a0d-8af2-5b31cd4c227b" />
+          </association>
+          <association Id="69cfe228-ecf0-4224-b6ca-d144666eb919" isDerived="false" sourceEndRoleName="Add 2D physics" targetEndRoleName="Realtime physics simulation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fef78cd5-a711-46e0-920a-32ed12334fbc" LastKnownName="Realtime physics simulation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e06ddb66-6033-4135-b44c-ef7fb7dcdcb7" name="Add 2D physics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="952f01cb-a1a2-4598-a871-a9928ce1e780" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e5d55a32-a83c-4aeb-bca3-f3ae79ba0479" name="Realtime physics simulation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="52d5730a-9298-4f71-a1c1-b7243e10a06b" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0fa68cf3-8860-4867-afd9-1a677ffc6679" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="137645a7-da8d-423b-9bef-7d2879e76712" name="Add 3D physics" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="21aa0c67-26bf-40d9-9bf5-2d7db155e46f" />
+        <targetEnds>
+          <association Id="6d700880-fd10-44ea-8b05-bd7f3bd2b60a" isDerived="false" sourceEndRoleName="Add 3D physics" targetEndRoleName="Fluid simulation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fea860a6-fe34-4272-8c48-11787e87ad55" LastKnownName="Fluid simulation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ac9c6cd2-9a4b-4e40-8818-7de71e0ec0c6" name="Add 3D physics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="b282f439-0995-4288-9a14-b97ee387281c" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="e9fc3528-7fa0-486c-9063-c9c3a8494ee3" name="Fluid simulation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="04e03e19-d331-4d36-af49-2dca05d1738e" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7c696793-1425-4c57-9f8b-ec4dbb535098" />
+          </association>
+          <association Id="a65eff58-4579-4488-ba5e-7a0cf8e525c2" isDerived="false" sourceEndRoleName="Add 3D physics" targetEndRoleName="Realtime physics simulation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fef78cd5-a711-46e0-920a-32ed12334fbc" LastKnownName="Realtime physics simulation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d49bc740-af68-4fcf-aa67-9c65bc1e19e9" name="Add 3D physics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="cb7f486c-9682-45b2-bfb5-bed1a3bd25dc" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="ded42f0d-5868-4514-a0ee-fde18eb34be7" name="Realtime physics simulation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="04acc41d-7c70-4223-9be7-b7d77e1f8cd9" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="7d0c4a14-1795-49a3-bef8-82df236bd242" />
+          </association>
+          <association Id="d3d3449c-38f9-43bf-b966-e25fb4e47aaf" isDerived="false" sourceEndRoleName="Add 3D physics" targetEndRoleName="Collision detection with different shapes" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="9eead5d9-6327-4aea-917b-b5edafb17668" LastKnownName="Collision detection with different shapes" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d78891ee-da00-4517-8eb4-7f4d006b2605" name="Add 3D physics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="909e640c-bcf7-43a7-af91-c6566a74462f" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="49983089-86e2-4284-aeec-944c790fcbe8" name="Collision detection with different shapes" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="641230c2-13ea-4107-b805-861bd28efde1" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="1e20a129-cc84-4d38-8e55-450e0ea4007e" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="54db0de7-a941-4d02-8bc7-77fcceae50a7" name="TankeSmedjan">
+    <elementDefinition Id="8042d742-8a48-45b0-a74e-9d4d8fbef984" />
+  </package>
+</useCaseModelRoot>
