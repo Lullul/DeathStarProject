@@ -1,1 +1,27 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="8137f8a8-af9d-469c-8504-89f5ca238ea1" name="AudioUseCase" linkedPackageId="1b06f8a5-f20d-4e60-8e40-3d14eae867b5" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="caf7173b-719d-4603-9915-97de773354fb">
+      <profileInstance Id="e1f02ac7-d2ea-4249-894c-8667ad59f0fb" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="3d6167ef-c6fa-470f-8a71-3721f34fdc59">
+      <profileInstance Id="1aa38800-ed57-41fb-9fdd-a0a58ca4d4fc" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <actor Id="8b45481d-e981-4f2a-9e0f-d8f1917b83e4" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f2ceab5e-5a4c-4f0e-b928-5e1856d6cd7a" />
+      </actor>
+    </useCaseModelRootHasTypes>
+  </packagedElements>
+  <package Id="1b06f8a5-f20d-4e60-8e40-3d14eae867b5" name="TankeSmedjan">
+    <elementDefinition Id="8042d742-8a48-45b0-a74e-9d4d8fbef984" />
+  </package>
+</useCaseModelRoot>

@@ -1,1 +1,10 @@
-﻿ 
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AudioUseCase">
+  <useCaseModelRootMoniker Id="8137f8a8-af9d-469c-8504-89f5ca238ea1" />
+  <nestedChildShapes>
+    <actorShape Id="7749089f-971a-475e-955a-02afe6877681" absoluteBounds="3.375, 2, 0.5, 0.5" isReference="false" heightOffset="0">
+      <actorMoniker Id="8b45481d-e981-4f2a-9e0f-d8f1917b83e4" LastKnownName="User" />
+      <relativeChildShapes />
+    </actorShape>
+  </nestedChildShapes>
+</useCaseDiagram>
