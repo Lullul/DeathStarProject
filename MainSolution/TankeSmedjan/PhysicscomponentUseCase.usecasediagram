@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="6d4d1d48-5044-4c97-9f94-93a5aba52012" name="PhysicscomponentUseCase" linkedPackageId="54db0de7-a941-4d02-8bc7-77fcceae50a7" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="a1dc1fb9-ecbb-4883-973a-eaf63fe85ce4">
-      <profileInstance Id="7e052213-8e4b-4b96-b482-792a605fd7cd" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="d0bc5429-c6ad-4c49-a0b7-df13a4d85c2f">
-      <profileInstance Id="c8aa9417-087f-48eb-a090-738771d997aa" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="29745057-e881-46b8-9d2f-7c6d973c8c6b" name="User" isAbstract="false" isLeaf="false">
@@ -105,6 +91,22 @@
             </relationshipOwnedElementsInternal>
             <elementDefinition Id="0fa68cf3-8860-4867-afd9-1a677ffc6679" />
           </association>
+          <association Id="c587811c-03d3-430e-9474-24c0d4d6fe31" isDerived="false" sourceEndRoleName="Add 2D physics" targetEndRoleName="Fluid simulation" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="fea860a6-fe34-4272-8c48-11787e87ad55" LastKnownName="Fluid simulation" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="bc5ff5e1-9f08-496e-b45b-f708ca8d4a08" name="Add 2D physics" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="a2b6e675-b1eb-4db2-80ba-6d4d73b2a2ad" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="fc70111b-c2e9-45c3-81f2-36b5e5c55c19" name="Fluid simulation" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="2865c177-58cd-4c36-85ec-3676f44a73c3" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="a9d46f66-9d6a-4f71-b190-346fe2f49c70" />
+          </association>
         </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
@@ -166,5 +168,19 @@
   </packagedElements>
   <package Id="54db0de7-a941-4d02-8bc7-77fcceae50a7" name="TankeSmedjan">
     <elementDefinition Id="8042d742-8a48-45b0-a74e-9d4d8fbef984" />
+    <profileInstances>
+      <packageHasProfileInstances Id="a1dc1fb9-ecbb-4883-973a-eaf63fe85ce4">
+        <profileInstance Id="7e052213-8e4b-4b96-b482-792a605fd7cd" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="d0bc5429-c6ad-4c49-a0b7-df13a4d85c2f">
+        <profileInstance Id="c8aa9417-087f-48eb-a090-738771d997aa" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>

@@ -1,19 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="48170c0a-5af4-4ed6-8067-fc8aef21721c" name="InputUseCase" linkedPackageId="d3d6ce6f-77c7-454f-8f12-f6a24e4ec605" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
-  <profileInstances>
-    <packageHasProfileInstances Id="e91a7e34-148b-4483-abb4-981a419a58f5">
-      <profileInstance Id="8a5ca68c-e1d7-4a09-ad46-286f9f912472" name="StandardProfileL2">
-        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
-      </profileInstance>
-      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
-    </packageHasProfileInstances>
-    <packageHasProfileInstances Id="bbb5b60a-247b-43e5-b9e7-0de05fdfdf49">
-      <profileInstance Id="08e28459-a43b-4160-8104-4781cab6b01a" name="StandardProfileL3">
-        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
-      </profileInstance>
-      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
-    </packageHasProfileInstances>
-  </profileInstances>
   <packagedElements>
     <useCaseModelRootHasTypes>
       <actor Id="75d2a303-4210-4d01-93b1-3674e2064134" name="User" isAbstract="false" isLeaf="false">
@@ -57,15 +43,70 @@
     <useCaseModelRootHasTypes>
       <useCase Id="7e8e4a8e-9f88-4598-bceb-e394d442541f" name="Give input with a Keyboard" isAbstract="false" isLeaf="false">
         <elementDefinition Id="a94d381c-0d80-4f61-9d18-c217ee1fd817" />
+        <targetEnds>
+          <association Id="336fb69b-a34f-4f15-a390-16b27759c7a8" isDerived="false" sourceEndRoleName="Give input with a Keyboard" targetEndRoleName="Trigger event" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1334df09-d63f-4ebc-8353-f9a7904cf260" LastKnownName="Trigger event" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="5756ca5d-3edf-4d95-a5a3-0c991e62b19b" name="Give input with a Keyboard" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="daa0920b-06e0-48e8-bf4a-205666954b8d" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="9b9464de-1a2d-431c-8c7e-5a69f56adfd3" name="Trigger event" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="066f2002-f189-486d-b6f6-c4319e85f1a0" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="b44bd87c-fc55-42a1-a16f-d2f236860ce4" />
+          </association>
+        </targetEnds>
       </useCase>
     </useCaseModelRootHasTypes>
     <useCaseModelRootHasTypes>
       <useCase Id="313c967f-4ae9-4c5e-9c94-fa35551de5aa" name="Give input with a mouse" isAbstract="false" isLeaf="false">
         <elementDefinition Id="3d26f1b0-d4d2-4044-a318-e43f8a797844" />
+        <targetEnds>
+          <association Id="02b51389-8c38-470f-82a9-567857ed7d76" isDerived="false" sourceEndRoleName="Give input with a mouse" targetEndRoleName="Trigger event" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="1334df09-d63f-4ebc-8353-f9a7904cf260" LastKnownName="Trigger event" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="d1346bfe-c681-45d3-87e9-15ee5a54960f" name="Give input with a mouse" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="6d1a62ce-b4dd-4fcc-9838-bfca7a8effe8" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="7bb843a7-da54-4e0e-ba9c-57889ba5a772" name="Trigger event" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="9192c25b-5385-4796-881b-329591e8f474" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="79a05313-148a-4b4d-8182-8b7adcbc95e0" />
+          </association>
+        </targetEnds>
+      </useCase>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <useCase Id="1334df09-d63f-4ebc-8353-f9a7904cf260" name="Trigger event" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a119757d-f9fe-428b-a73d-ba4f21cd511b" />
       </useCase>
     </useCaseModelRootHasTypes>
   </packagedElements>
   <package Id="d3d6ce6f-77c7-454f-8f12-f6a24e4ec605" name="TankeSmedjan">
     <elementDefinition Id="8042d742-8a48-45b0-a74e-9d4d8fbef984" />
+    <profileInstances>
+      <packageHasProfileInstances Id="e91a7e34-148b-4483-abb4-981a419a58f5">
+        <profileInstance Id="8a5ca68c-e1d7-4a09-ad46-286f9f912472" name="StandardProfileL2">
+          <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+        </profileInstance>
+        <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+      </packageHasProfileInstances>
+      <packageHasProfileInstances Id="bbb5b60a-247b-43e5-b9e7-0de05fdfdf49">
+        <profileInstance Id="08e28459-a43b-4160-8104-4781cab6b01a" name="StandardProfileL3">
+          <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+        </profileInstance>
+        <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+      </packageHasProfileInstances>
+    </profileInstances>
   </package>
 </useCaseModelRoot>

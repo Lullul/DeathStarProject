@@ -621,7 +621,49 @@
         Id="a94d381c-0d80-4f61-9d18-c217ee1fd817"
         name="Give input with a Keyboard"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="b44bd87c-fc55-42a1-a16f-d2f236860ce4"
+            isDerived="false"
+            sourceEndRoleName="Give input with a Keyboard"
+            targetEndRoleName="Trigger event"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a119757d-f9fe-428b-a73d-ba4f21cd511b"
+              LastKnownName="Trigger event"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="daa0920b-06e0-48e8-bf4a-205666954b8d"
+                  name="Give input with a Keyboard"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="066f2002-f189-486d-b6f6-c4319e85f1a0"
+                  name="Trigger event"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <subsystem
@@ -636,7 +678,49 @@
         Id="3d26f1b0-d4d2-4044-a318-e43f8a797844"
         name="Give input with a mouse"
         isAbstract="false"
-        isLeaf="false" />
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="79a05313-148a-4b4d-8182-8b7adcbc95e0"
+            isDerived="false"
+            sourceEndRoleName="Give input with a mouse"
+            targetEndRoleName="Trigger event"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="a119757d-f9fe-428b-a73d-ba4f21cd511b"
+              LastKnownName="Trigger event"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="6d1a62ce-b4dd-4fcc-9838-bfca7a8effe8"
+                  name="Give input with a mouse"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9192c25b-5385-4796-881b-329591e8f474"
+                  name="Trigger event"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
     </packageHasNamedElement>
     <packageHasNamedElement>
       <actor
@@ -1287,6 +1371,45 @@
                 <memberEnd
                   Id="52d5730a-9298-4f71-a1c1-b7243e10a06b"
                   name="Realtime physics simulation"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="a9d46f66-9d6a-4f71-b190-346fe2f49c70"
+            isDerived="false"
+            sourceEndRoleName="Add 2D physics"
+            targetEndRoleName="Fluid simulation"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="13defe8a-d369-4c7c-ad0c-2ed100abee73"
+              LastKnownName="Fluid simulation"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="a2b6e675-b1eb-4db2-80ba-6d4d73b2a2ad"
+                  name="Add 2D physics"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="2865c177-58cd-4c36-85ec-3676f44a73c3"
+                  name="Fluid simulation"
                   isLeaf="false"
                   isStatic="false"
                   isReadOnly="false"
