@@ -1106,6 +1106,200 @@
         isAbstract="false"
         isLeaf="false" />
     </packageHasNamedElement>
+    <packageHasNamedElement>
+      <artifact
+        Id="78905508-ca3a-475b-89ef-a55f2d1d8afd"
+        name="System"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="afc4594f-fdf2-4873-9c2e-72e5161881a2">
+            <useCaseMoniker
+              Id="a890bdad-91be-45e0-bac5-3f91b7e806f0"
+              LastKnownName="Import"
+              LastKnownLocation="TankeSmedjan.uml" />
+          </dependency>
+        </suppliersInternal>
+        <targetEnds>
+          <association
+            Id="a8773d7c-1235-472c-bb8f-cc7cbb4aa022"
+            isDerived="false"
+            sourceEndRoleName="Artifact2"
+            targetEndRoleName="UseCase4"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="4772ea60-8097-435d-9ea3-8a3613e8b313"
+              LastKnownName="Handle Event"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="86f027ef-a6c0-4178-9f80-dc90f55ee2eb"
+                  name="Artifact2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="252532a0-cfc0-473a-b969-549409e5cc80"
+                  name="UseCase4"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+          <association
+            Id="29bf8e1d-b218-4f0a-a158-86ab0f441471"
+            isDerived="false"
+            sourceEndRoleName="Artifact2"
+            targetEndRoleName="UseCase6"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="95696daa-12c1-4d09-943f-081bd4b8e674"
+              LastKnownName="Handle GameObjects"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="7e82b7d3-de75-438c-b767-b9ed85dfc2d0"
+                  name="Artifact2"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="ecc0f72f-2e28-4e6f-8934-19387dd1bcc6"
+                  name="UseCase6"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </artifact>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="a890bdad-91be-45e0-bac5-3f91b7e806f0"
+        name="Import"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="2abae5bb-5e4e-4124-8606-de6746fed06c"
+        name="Play Sound"
+        isAbstract="false"
+        isLeaf="false" />
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="4772ea60-8097-435d-9ea3-8a3613e8b313"
+        name="Handle Event"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="9762e745-5679-410a-8814-04a8b8bc0e0c">
+            <useCaseMoniker
+              Id="2abae5bb-5e4e-4124-8606-de6746fed06c"
+              LastKnownName="Play Sound"
+              LastKnownLocation="TankeSmedjan.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="9af7127e-21b3-4b82-ab23-e2d07e925790"
+        name="3D Sounds"
+        isAbstract="false"
+        isLeaf="false">
+        <suppliersInternal>
+          <dependency
+            Id="f65d4656-821e-48cc-8408-c69586f8126b">
+            <useCaseMoniker
+              Id="2abae5bb-5e4e-4124-8606-de6746fed06c"
+              LastKnownName="Play Sound"
+              LastKnownLocation="TankeSmedjan.uml" />
+          </dependency>
+        </suppliersInternal>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase
+        Id="95696daa-12c1-4d09-943f-081bd4b8e674"
+        name="Handle GameObjects"
+        isAbstract="false"
+        isLeaf="false">
+        <targetEnds>
+          <association
+            Id="bc746fd4-ed54-4b8b-9a29-24c24c9e062b"
+            isDerived="false"
+            sourceEndRoleName="UseCase6"
+            targetEndRoleName="UseCase5"
+            isLeaf="false"
+            isAbstract="false">
+            <useCaseMoniker
+              Id="9af7127e-21b3-4b82-ab23-e2d07e925790"
+              LastKnownName="3D Sounds"
+              LastKnownLocation="TankeSmedjan.uml" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="9dd720d6-5d4b-41c7-9f87-b7afbb8807ca"
+                  name="UseCase6"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false"
+                  isNavigableOwned="false" />
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd
+                  Id="b6429934-cee9-43b7-8bb7-1e4e8a758711"
+                  name="UseCase5"
+                  isLeaf="false"
+                  isStatic="false"
+                  isReadOnly="false"
+                  isDerived="false"
+                  isDerivedUnion="false"
+                  aggregation="None"
+                  isComposite="false" />
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+          </association>
+        </targetEnds>
+      </useCase>
+    </packageHasNamedElement>
   </packagedElements>
   <primitiveType
     Id="220a3521-e091-4221-bae9-3ef9018e845c"

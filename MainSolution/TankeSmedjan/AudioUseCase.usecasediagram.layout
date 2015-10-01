@@ -1,80 +1,76 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11, 8.5" name="AudioUseCase">
+<useCaseDiagram dslVersion="1.0.0.0" absoluteBounds="0, 0, 11.25, 8.5" name="AudioUseCase">
   <useCaseModelRootMoniker Id="8137f8a8-af9d-469c-8504-89f5ca238ea1" />
   <nestedChildShapes>
-    <useCaseShape Id="c56f6575-6774-427a-a831-bdd76e929ee4" absoluteBounds="4.75, 1, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="0afc3e3d-646e-4bec-afb1-cfc5661ad0ef" LastKnownName="UseCase2" />
-      <relativeChildShapes />
-    </useCaseShape>
-    <useCaseShape Id="6512f614-1c21-4e2a-9b61-f85fc37223fa" absoluteBounds="4.75, 1, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="632b910c-5f9d-4eb4-9f9c-82ed5bde3bd8" LastKnownName="Import Sounds" />
-      <relativeChildShapes />
-    </useCaseShape>
-    <useCaseShape Id="025af7bd-7ae2-4341-b099-5b257662dcc8" absoluteBounds="6.125, 1.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="43486d3b-928e-45d1-9c59-db24854e286c" LastKnownName="Handle Event" />
-      <relativeChildShapes />
-    </useCaseShape>
-    <useCaseShape Id="f8c10343-bbac-44ab-a52e-f6c6dacf1bc0" absoluteBounds="8.25, 1.75, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="07356362-df6c-4a28-9f02-c29aa2d25439" LastKnownName="Play Sound" />
-      <relativeChildShapes />
-    </useCaseShape>
-    <useCaseDependencyConnector edgePoints="[(7.12157530216144 : 1.90421031189185); (8.25342469783856 : 1.97078968810815)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
-      <dependencyMoniker Id="4b125b16-054b-451d-bc76-8027db6e590a" />
-      <relativeChildShapes />
-      <nodes>
-        <useCaseShapeMoniker Id="025af7bd-7ae2-4341-b099-5b257662dcc8" />
-        <useCaseShapeMoniker Id="f8c10343-bbac-44ab-a52e-f6c6dacf1bc0" />
-      </nodes>
-    </useCaseDependencyConnector>
-    <useCaseShape Id="e04ee3a0-4ecd-424b-b05d-28ce064c00b1" absoluteBounds="7.625, 2.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="253a1aa0-d9c0-4371-8c1c-39ab6657a2c0" LastKnownName="Manage 3D Sounds" />
-      <relativeChildShapes />
-    </useCaseShape>
-    <useCaseDependencyConnector edgePoints="[(8.25882193189305 : 2.88412052259251); (8.61617806810695 : 2.24087947740749)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
-      <dependencyMoniker Id="385f8419-3b9b-437d-9063-9b0d79696dcb" />
-      <relativeChildShapes />
-      <nodes>
-        <useCaseShapeMoniker Id="e04ee3a0-4ecd-424b-b05d-28ce064c00b1" />
-        <useCaseShapeMoniker Id="f8c10343-bbac-44ab-a52e-f6c6dacf1bc0" />
-      </nodes>
-    </useCaseDependencyConnector>
-    <useCaseShape Id="fa5d0740-be0c-432b-90b9-137fb9363da1" absoluteBounds="5.375, 3.25, 1.125, 0.5" customColor="238, 237, 131" heightOffset="0">
-      <useCaseMoniker Id="a39e3bb8-6e71-4d34-95a1-c03addf6149b" LastKnownName="Handle GameObjects" />
-      <relativeChildShapes />
-    </useCaseShape>
-    <useCaseAssociationConnector edgePoints="[(6.46231343282993 : 3.41003198294344); (7.65202702702703 : 3.20608108108108)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
-      <associationMoniker Id="3f297fc8-fb29-4cb8-a0e7-fb19dc5cb740" />
-      <relativeChildShapes />
-      <nodes>
-        <useCaseShapeMoniker Id="fa5d0740-be0c-432b-90b9-137fb9363da1" />
-        <useCaseShapeMoniker Id="e04ee3a0-4ecd-424b-b05d-28ce064c00b1" />
-      </nodes>
-    </useCaseAssociationConnector>
-    <artifactShape Id="c12cf2c4-4223-4351-8c67-b5889495d0a2" absoluteBounds="3.25, 2.875, 1.5, 0.5" customColor="161, 199, 231">
-      <artifactMoniker Id="fd9e90c2-3cb4-47f1-90ef-bb240a7556db" LastKnownName="System" />
+    <artifactShape Id="6a53c1d1-83b8-4b99-89d4-d354e3d2db54" absoluteBounds="4, 2.625, 1.5, 0.5" customColor="161, 199, 231">
+      <artifactMoniker Id="545dd701-c14a-48ed-b91e-c481ef04ccbb" LastKnownName="System" />
     </artifactShape>
-    <useCaseDependencyConnector edgePoints="[(4.16666666666667 : 2.875); (5.09188611699158 : 1.48717082451263)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
-      <dependencyMoniker Id="8ec99f0b-69d1-4bcf-b714-ea6ade5ecec5" />
+    <useCaseShape Id="092e6e2c-2c0d-43f1-9a1c-d1d4949bc78d" absoluteBounds="6.375, 1.25, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="8ee3a688-6a04-470f-a07d-20a427af1840" LastKnownName="Import" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseDependencyConnector edgePoints="[(5.13636363636364 : 2.625); (6.56927624946212 : 1.69782125034804)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="1861bd34-717d-470f-ba47-5d6cb30397b8" />
       <relativeChildShapes />
       <nodes>
-        <artifactShapeMoniker Id="c12cf2c4-4223-4351-8c67-b5889495d0a2" />
-        <useCaseShapeMoniker Id="6512f614-1c21-4e2a-9b61-f85fc37223fa" />
+        <artifactShapeMoniker Id="6a53c1d1-83b8-4b99-89d4-d354e3d2db54" />
+        <useCaseShapeMoniker Id="092e6e2c-2c0d-43f1-9a1c-d1d4949bc78d" />
       </nodes>
     </useCaseDependencyConnector>
-    <useCaseAssociationConnector edgePoints="[(4.525 : 2.875); (6.26293103448276 : 2.04741379310345)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
-      <associationMoniker Id="bf668307-d523-4a89-ae57-2c44798a59d0" />
+    <useCaseShape Id="7e8f08e7-72ce-4102-9836-7d5f17b80b3c" absoluteBounds="10, 3, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="2fe519dc-cfd6-4c0a-91ac-9e3579b4519f" LastKnownName="Play Sound" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseShape Id="9457b254-dd3d-4ec5-912f-e7c44aaf4496" absoluteBounds="6.75, 2.625, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="476da117-bd6f-4793-b00b-8cd6d57f0e4a" LastKnownName="Handle Event" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(5.5 : 2.875); (6.75 : 2.875)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="a1cf1c84-8604-4f6f-ba62-eba05dbcf0a0" />
       <relativeChildShapes />
       <nodes>
-        <artifactShapeMoniker Id="c12cf2c4-4223-4351-8c67-b5889495d0a2" />
-        <useCaseShapeMoniker Id="025af7bd-7ae2-4341-b099-5b257662dcc8" />
+        <artifactShapeMoniker Id="6a53c1d1-83b8-4b99-89d4-d354e3d2db54" />
+        <useCaseShapeMoniker Id="9457b254-dd3d-4ec5-912f-e7c44aaf4496" />
       </nodes>
     </useCaseAssociationConnector>
-    <useCaseAssociationConnector edgePoints="[(4.75 : 3.27016129032258); (5.42178042559672 : 3.40018330818001)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
-      <associationMoniker Id="d7a5bf87-64bb-4624-b376-9771b4361458" />
+    <useCaseDependencyConnector edgePoints="[(7.73719559784731 : 2.93121487667469); (10.0128044021527 : 3.19378512332531)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="cdea88d9-6381-4d57-a373-1fca66d54591" />
       <relativeChildShapes />
       <nodes>
-        <artifactShapeMoniker Id="c12cf2c4-4223-4351-8c67-b5889495d0a2" />
-        <useCaseShapeMoniker Id="fa5d0740-be0c-432b-90b9-137fb9363da1" />
+        <useCaseShapeMoniker Id="9457b254-dd3d-4ec5-912f-e7c44aaf4496" />
+        <useCaseShapeMoniker Id="7e8f08e7-72ce-4102-9836-7d5f17b80b3c" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <useCaseShape Id="ef19c8af-1efd-4a90-b357-8766d2cc57eb" absoluteBounds="8.25, 3.875, 1, 0.5" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="1f8301a4-6ca4-422e-8a17-f34a8e56f9d7" LastKnownName="3D Sounds" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseDependencyConnector edgePoints="[(9.10355339059327 : 3.94822330470336); (10.1464466094067 : 3.42677669529664)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="Black">
+      <dependencyMoniker Id="0acaa606-8a07-4034-afdd-9894358fec1a" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="ef19c8af-1efd-4a90-b357-8766d2cc57eb" />
+        <useCaseShapeMoniker Id="7e8f08e7-72ce-4102-9836-7d5f17b80b3c" />
+      </nodes>
+    </useCaseDependencyConnector>
+    <useCaseShape Id="e8196c97-41e6-404e-aad2-769598eb81d1" absoluteBounds="6.5, 3.5, 1.125, 0.75" customColor="238, 237, 131" heightOffset="0">
+      <useCaseMoniker Id="d1244452-e304-4467-a49e-51b954827037" LastKnownName="Handle GameObjects" />
+      <relativeChildShapes />
+    </useCaseShape>
+    <useCaseAssociationConnector edgePoints="[(5.328125 : 3.125); (6.59058427604694 : 3.67092833558787)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="41a598b2-5259-48bd-94be-5efa14c7b48c" />
+      <relativeChildShapes />
+      <nodes>
+        <artifactShapeMoniker Id="6a53c1d1-83b8-4b99-89d4-d354e3d2db54" />
+        <useCaseShapeMoniker Id="e8196c97-41e6-404e-aad2-769598eb81d1" />
+      </nodes>
+    </useCaseAssociationConnector>
+    <useCaseAssociationConnector edgePoints="[(7.61160522135347 : 3.956348921682); (8.27060094364581 : 4.05397791757716)]" fixedFrom="Algorithm" fixedTo="Algorithm" customColor="113, 111, 110" sourceMultiplicity="" targetMultiplicity="">
+      <associationMoniker Id="8a7c734a-7df7-4da1-bdb8-3924ae6f7f9f" />
+      <relativeChildShapes />
+      <nodes>
+        <useCaseShapeMoniker Id="e8196c97-41e6-404e-aad2-769598eb81d1" />
+        <useCaseShapeMoniker Id="ef19c8af-1efd-4a90-b357-8766d2cc57eb" />
       </nodes>
     </useCaseAssociationConnector>
   </nestedChildShapes>
