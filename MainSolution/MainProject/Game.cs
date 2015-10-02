@@ -37,7 +37,7 @@ namespace MainProject
 
             GL.Enable(EnableCap.Texture2D);
 
-            texture = ContentPipe.LoadTexture("Resources/img/varning.jpg");
+            texture = ContentPipe.LoadTexture("Resources/img/Batman-on-a-motherfucking-unicorn.jpg");
         }
 
         void window_UpdateFrame(object sender, FrameEventArgs e)
@@ -56,13 +56,13 @@ namespace MainProject
             GL.Begin(PrimitiveType.Triangles);
 
             GL.Color4(1f, 1f, 1f, 1f);
-            GL.TexCoord2(0, 0); GL.Vertex2(0, 1);
-            GL.TexCoord2(1, 1); GL.Vertex2(1, 0);
-            GL.TexCoord2(0, 1); GL.Vertex2(0, 0);
+            GL.TexCoord2(0, 0); GL.Vertex2(-0.5f, 0.5f);
+            GL.TexCoord2(1, 1); GL.Vertex2(0.5f, -0.5f);
+            GL.TexCoord2(0, 1); GL.Vertex2(-0.5f, -0.5f);
 
-            GL.TexCoord2(0, 0); GL.Vertex2(0, 1);
-            GL.TexCoord2(1, 0); GL.Vertex2(1, 1);
-            GL.TexCoord2(1, 1); GL.Vertex2(1, 0);
+            GL.TexCoord2(0, 0); GL.Vertex2(-0.25f, 0.75f);
+            GL.TexCoord2(1, 0); GL.Vertex2(0.75f, 0.75f);
+            GL.TexCoord2(1, 1); GL.Vertex2(0.75f, -0.25f);
 
             //GL.Color3(Color.Red);
             //GL.Vertex3(0, 0, 0.5f);
