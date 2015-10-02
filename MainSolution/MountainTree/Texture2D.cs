@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace MountainTree
 {
-    struct Texture2D
+    public struct Texture2D
     {
         public Texture2D(int id, int width, int height)
         {
