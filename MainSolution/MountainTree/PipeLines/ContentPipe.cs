@@ -12,7 +12,7 @@ using System.Drawing.Imaging;
 
 namespace MainProject.PipeLines
 {
-    class ContentPipe
+    public class ContentPipe
     {
         public static Texture2D LoadTexture(string filePath)
         {
